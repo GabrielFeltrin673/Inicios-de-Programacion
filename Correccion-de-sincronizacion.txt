@@ -1,0 +1,92 @@
+ git branch -m main
+> git pull origin main --allow-unrelated-histories
+fatal: protocol 'https' is not supported
+> ^C
+> git pull origin main --allow-unrelated-histories
+fatal: protocol 'https' is not supported
+> git remote remove origin
+> git remote add origin https://github.com/GabrielFeltrin673/Inicios-de-Programacion.git
+> git push -u origin main
+To https://github.com/GabrielFeltrin673/Inicios-de-Programacion.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/GabrielFeltrin673/Inicios-de-Programacion.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+> git pull origin main --allow-unrelated-histories
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 10 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (10/10), 2.35 KiB | 160.00 KiB/s, done.
+From https://github.com/GabrielFeltrin673/Inicios-de-Programacion
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+Auto-merging format.py
+CONFLICT (add/add): Merge conflict in format.py
+Auto-merging intro.py
+CONFLICT (add/add): Merge conflict in intro.py
+Automatic merge failed; fix conflicts and then commit the result.
+> git status
+On branch main
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   Calculadordepropina.py
+        new file:   Variable.py
+        new file:   contadoredad.py
+        new file:   repartidor.py
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      format.py
+        both added:      intro.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .~lock.Apunta de Git.odt#
+        Apunta de Git.odt
+        Apuntes Python.odt
+        Curse-py
+
+> git add format.py intro.py
+warning: in the working copy of 'format.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'intro.py', LF will be replaced by CRLF the next time Git touches it
+> git status
+On branch main
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        new file:   Calculadordepropina.py
+        new file:   Variable.py
+        new file:   contadoredad.py
+        modified:   format.py
+        modified:   intro.py
+        new file:   repartidor.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .~lock.Apunta de Git.odt#
+        Apunta de Git.odt
+        Apuntes Python.odt
+        Curse-py
+
+> git commit -m "reparando la sinncronizacion con GitHub"
+[main cf0688a] reparando la sinncronizacion con GitHub
+> git push -u origin main
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (22/22), 2.29 KiB | 1.15 MiB/s, done.
+Total 22 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/GabrielFeltrin673/Inicios-de-Programacion.git
+   a0ef785..cf0688a  main -> main
+branch 'main' set up to track 'origin/main'.
+> code
