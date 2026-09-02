@@ -1,7 +1,7 @@
 nombre_curso = "Python"
 # un string es un valor de texto, es decir, una cadena de caracteres.
 descripcion_curso = """Este curso de Python es muy completo y abarca 
-desde los conceptos básicos hasta temas avanzados.
+desde los conceptos basicos hasta temas avanzados.
 """
 print(nombre_curso, descripcion_curso)
 
@@ -17,7 +17,7 @@ print(nombre_curso[:])
 
 # len Devuelve la cantidad de caracteres que tiene la variable
 # nombre_curso
-# un argumento es un valor que se le pasa a una función para que esta
+# un argumento es un valor que se le pasa a una funcion para que esta
 # pueda realizar su tarea.
 # *
 # *Se escriben entre comillas simples o dobles
