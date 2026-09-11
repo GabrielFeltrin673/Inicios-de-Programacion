@@ -1,0 +1,32 @@
+print("Bienvenido a la calculadora interactiva")
+print("Ingrese un número para comenzar o 'salir' para terminar.")
+print("Luego ingrese una operación (+, -, *, /) y un segundo número para obtener el resultado.")
+
+
+resultado = ""
+
+while True:
+    if not resultado:
+        resultado = input("ingrese numero: ")
+        if resultado.lower == "salir":
+            break
+        resultado = int(resultado)
+    operacion = input("ingrese operaciones +, -, *, /: ")
+    if operacion.lower() == "salir":
+        break
+    n2 = input("ingrese segundo numero: ")
+    if n2.lower == "salir":
+        break
+    n2 = int(n2)
+    if operacion == "+":
+        resultado += n2
+    if operacion == "-":
+        resultado -= n2
+    if operacion == "*":
+        resultado *= n2
+    if operacion == "/":
+        resultado /= n2
+    else:
+        print("operacion no valida")
+        break
+    print(f"el resultado es {resultado}")
