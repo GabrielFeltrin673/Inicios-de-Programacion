@@ -8,23 +8,23 @@ resultado = ""
 while True:
     if not resultado:
         resultado = input("ingrese numero: ")
-        if resultado.lower == "salir":
+        if resultado.lower() == "salir":
             break
-        resultado = int(resultado)
+        resultado = float(resultado)
     operacion = input("ingrese operaciones +, -, *, /: ")
     if operacion.lower() == "salir":
         break
     n2 = input("ingrese segundo numero: ")
-    if n2.lower == "salir":
+    if n2.lower() == "salir":
         break
-    n2 = int(n2)
+    n2 = float(n2)
     if operacion == "+":
         resultado += n2
-    if operacion == "-":
+    elif operacion == "-":
         resultado -= n2
-    if operacion == "*":
+    elif operacion == "*":
         resultado *= n2
-    if operacion == "/":
+    elif operacion == "/":
         resultado /= n2
     else:
         print("operacion no valida")
